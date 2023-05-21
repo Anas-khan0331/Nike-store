@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import { heroapi,toprateslaes,popularsales ,highlight,sneaker} from './data/data'
 import Sales from './components/Sales'
 import FlexContent from './components/FlexContent'
+import Check from './components/Check'
 const App = () => {
   return (
     <main className='relative gap-16 flex flex-col'>
@@ -11,6 +12,8 @@ const App = () => {
         <FlexContent endpoint={highlight}/>
         <Sales endpoint={toprateslaes}/>
         <FlexContent endpoint={sneaker}/>
+        <Check />
+        
 
     </main>
   )
